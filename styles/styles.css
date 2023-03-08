@@ -1,3 +1,54 @@
-body {
-  font-family: Helvetica, sans-serif;
+:root {
+  --ff-1: 'Bebas Neue', helvetica, sans-serif;
+  --ff-2: 'Anton', sans-serif;
+  --ff-3: 'Quicksand', sans-serif;
+  --ff-4: 'Quattrocento Sans', sans-serif;
+
+  --bg-orange: #a62f12;
 }
+
+/** Font Family Definitions */
+.ff-1 {
+  font-family: var(--ff-1);
+}
+.ff-2 {
+  font-family: var(--ff-2);
+}
+.ff-3 {
+  font-family: var(--ff-3);
+}
+.ff-4 {
+  font-family: var(--ff-4);
+}
+
+/** Background Color Definitions */
+.background-orange {
+  background-color: var(--bg-orange);
+}
+
+/* header {
+  background-image: url('../media/images/trey-flag-6.png');
+  background-attachment: fixed;
+  height: 100px;
+  width: auto;
+} */
+
+/* header div {
+  width: 50%;
+} */
+
+#hero-image {
+  background-image: url('../media/images/trey-flag-6.png');
+  height: 70vh;
+  /* width: 50%; */
+  border: 1px red;
+  background-size: cover;
+  background-attachment: local;
+}
+/* font-family: 'Anton', sans-serif; */
+
+/* font-family: 'Bebas Neue', cursive; */
+
+/* font-family: 'Quattrocento Sans', sans-serif; */
+
+/* font-family: 'Quicksand', sans-serif; */
