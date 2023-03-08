@@ -5,7 +5,11 @@
   --ff-4: 'Quattrocento Sans', sans-serif;
   --ff-5: helvetica;
 
+  /** Oranges */
   --bg-orange: #a62f12;
+  --bg-ai-orange: #bb3b2f;
+
+  /** Blues */
   --bg-flag-blue: #0a202e;
   --bg-royal-blue: #090446;
   --bg-oxford-blue: #14213d;
@@ -42,6 +46,9 @@
 .background-orange {
   background-color: var(--bg-orange);
 }
+.background-ai-orange {
+  background-color: var(--bg-ai-orange);
+}
 
 .background-flag-blue {
   background-color: var(--bg-flag-blue);
@@ -66,6 +73,9 @@
 /*! Color Definitions */
 .color-orange {
   color: var(--bg-orange);
+}
+.color-ai-orange {
+  color: var(--bg-ai-orange);
 }
 
 .color-flag-blue {
@@ -98,15 +108,21 @@
 /* header div {
   width: 50%;
 } */
-
+/*! Main Content Styles */
 #hero-image {
   background-image: url('../media/images/trey-flag-6.png');
   background-position: 50% 0%;
   height: 70vh;
   /* width: 50%; */
-  border: 1px red;
+  /* border: 1px red; */
   background-size: cover;
   background-attachment: local;
+  border-bottom: 1px solid var(--bg-platinum);
+  border-right: 1px solid var(--bg-platinum);
+}
+
+#header-elect-trey-div {
+  border-bottom: 1px solid var(--bg-platinum);
 }
 
 .keynote-content {

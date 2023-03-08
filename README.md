@@ -13,6 +13,7 @@ The campaign website for the Elect Trey Wilt for County Commissioner political r
 
 **Oranges**
 #a62f12 - Rufous
+#bb3b2f - AI orange
 
 **Whites**
 #DCE0D9 - Platinum
