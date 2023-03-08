@@ -3,11 +3,19 @@
   --ff-2: 'Anton', sans-serif;
   --ff-3: 'Quicksand', sans-serif;
   --ff-4: 'Quattrocento Sans', sans-serif;
+  --ff-5: helvetica;
 
   --bg-orange: #a62f12;
+  --bg-flag-blue: #0a202e;
+  --bg-royal-blue: #090446;
+  --bg-oxford-blue: #14213d;
+  --bg-ai-blue: #283565;
+
+  /** Whites */
+  --bg-platinum: #dce0d9;
 }
 
-/** Font Family Definitions */
+/*! Font Family Definitions */
 .ff-1 {
   font-family: var(--ff-1);
 }
@@ -21,9 +29,63 @@
   font-family: var(--ff-4);
 }
 
-/** Background Color Definitions */
+.ff-5 {
+  font-family: var(--ff-5);
+}
+
+/*! Font Size Definitions */
+.font-size-1 {
+  font-size: 3.5em;
+}
+
+/*! Background Color Definitions */
 .background-orange {
   background-color: var(--bg-orange);
+}
+
+.background-flag-blue {
+  background-color: var(--bg-flag-blue);
+}
+
+.background-royal-blue {
+  background-color: var(--bg-royal-blue);
+}
+
+.background-oxford-blue {
+  background-color: var(--bg-oxford-blue);
+}
+
+.background-platinum {
+  background-color: var(--bg-platinum);
+}
+
+.background-ai-blue {
+  background-color: var(--bg-ai-blue);
+}
+
+/*! Color Definitions */
+.color-orange {
+  color: var(--bg-orange);
+}
+
+.color-flag-blue {
+  color: var(--bg-flag-blue);
+}
+
+.color-royal-blue {
+  color: var(--bg-royal-blue);
+}
+
+.color-oxford-blue {
+  color: var(--bg-oxford-blue);
+}
+
+.color-platinum {
+  color: var(--bg-platinum);
+}
+
+.color-ai-blue {
+  color: var(--bg-ai-blue);
 }
 
 /* header {
@@ -39,16 +101,29 @@
 
 #hero-image {
   background-image: url('../media/images/trey-flag-6.png');
+  background-position: 50% 0%;
   height: 70vh;
   /* width: 50%; */
   border: 1px red;
   background-size: cover;
   background-attachment: local;
 }
-/* font-family: 'Anton', sans-serif; */
 
-/* font-family: 'Bebas Neue', cursive; */
+.keynote-content {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--bg-flag-blue);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
 
-/* font-family: 'Quattrocento Sans', sans-serif; */
+.keynote-content span {
+  background: var(--bg-orange);
+  padding: 0 10px;
+  font-size: 1.2em;
+}
 
-/* font-family: 'Quicksand', sans-serif; */
+main {
+  height: 100rem;
+  background-color: var(--bg-oxford-blue);
+}
