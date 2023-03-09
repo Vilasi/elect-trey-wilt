@@ -4,6 +4,10 @@
   --ff-3: 'Quicksand', sans-serif;
   --ff-4: 'Quattrocento Sans', sans-serif;
   --ff-5: helvetica;
+  --ff-6: 'Habibi', serif;
+
+  /** Widths */
+  --max-text-width: 60ch;
 
   /** Oranges */
   --bg-orange: #a62f12;
@@ -35,6 +39,10 @@
 
 .ff-5 {
   font-family: var(--ff-5);
+}
+
+.ff-6 {
+  font-family: var(--ff-6);
 }
 
 /*! Font Size Definitions */
@@ -111,6 +119,11 @@
 
 .color-ai-blue {
   color: var(--bg-ai-blue);
+}
+
+/*! Maximum Text Block Width */
+.ch-60 {
+  max-width: var(--max-text-width);
 }
 
 /*! Main Content Styles */
