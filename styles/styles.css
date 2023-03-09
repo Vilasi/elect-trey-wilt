@@ -98,16 +98,6 @@
   color: var(--bg-ai-blue);
 }
 
-/* header {
-  background-image: url('../media/images/trey-flag-6.png');
-  background-attachment: fixed;
-  height: 100px;
-  width: auto;
-} */
-
-/* header div {
-  width: 50%;
-} */
 /*! Main Content Styles */
 #hero-image {
   background-image: url('../media/images/trey-flag-6.png');
@@ -117,8 +107,12 @@
   /* border: 1px red; */
   background-size: cover;
   background-attachment: local;
-  border-bottom: 1px solid var(--bg-platinum);
   border-right: 1px solid var(--bg-platinum);
+  border-bottom: 1px solid var(--bg-platinum);
+}
+
+.border-right-none {
+  border-right: none !important;
 }
 
 #header-elect-trey-div {
