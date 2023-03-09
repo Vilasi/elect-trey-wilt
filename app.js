@@ -10,7 +10,7 @@ const engagementSectionWhatIPlan = document.querySelector(
 console.log(headerChildDivs);
 
 //* Add/Remove Navbar. Change nav-item margins
-function resizeElements(innerWidth) {
+function responsiveResizing(innerWidth) {
   if (innerWidth <= '992') {
     navbar.classList.add('d-none');
   } else {
@@ -54,11 +54,11 @@ function resizeElements(innerWidth) {
 
   console.log('hiyua!');
 }
-resizeElements(window.innerWidth);
+responsiveResizing(window.innerWidth);
 
 //*Trigger navbar add/removal on window resize event
 window.addEventListener('resize', () => {
-  resizeElements(window.innerWidth);
+  responsiveResizing(window.innerWidth);
 });
 
 //* Navbar height = 56px
