@@ -39,7 +39,22 @@
 
 /*! Font Size Definitions */
 .font-size-1 {
-  font-size: 3.5em;
+  font-size: 4.209rem;
+}
+.font-size-2 {
+  font-size: 3.157rem;
+}
+.font-size-3 {
+  font-size: 2.369rem;
+}
+.font-size-4 {
+  font-size: 1.777rem;
+}
+.font-size-5 {
+  font-size: 1.333rem;
+}
+.font-size-6 {
+  font-size: 1rem;
 }
 
 /*! Background Color Definitions */
@@ -117,6 +132,7 @@
 
 #header-elect-trey-div {
   border-bottom: 1px solid var(--bg-platinum);
+  border-bottom: 1px solid var(--bg-royal-blue);
 }
 
 .keynote-content {
@@ -128,12 +144,12 @@
 }
 
 .keynote-content span {
-  background: var(--bg-orange);
+  background: var(--bg-ai-orange);
   padding: 0 10px;
   font-size: 1.2em;
 }
 
-main {
+/* main {
   height: 100rem;
   background-color: var(--bg-oxford-blue);
-}
+} */
