@@ -131,8 +131,6 @@
   background-image: url('../media/images/trey-flag-6.png');
   background-position: 50% 0%;
   height: 70vh;
-  /* width: 50%; */
-  /* border: 1px red; */
   background-size: cover;
   background-attachment: local;
   border-right: 1px solid var(--bg-platinum);
@@ -161,8 +159,3 @@
   padding: 0 10px;
   font-size: 1.2em;
 }
-
-/* main {
-  height: 100rem;
-  background-color: var(--bg-oxford-blue);
-} */
