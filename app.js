@@ -2,6 +2,10 @@ const navbar = document.querySelector('#navbar');
 const navItems = document.querySelectorAll('.nav-item');
 const header = document.querySelector('#header');
 const headerChildDivs = document.querySelectorAll('#header div');
+const engagementSection = document.querySelector('#engagement-section');
+const engagementSectionWhatIPlan = document.querySelector(
+  '#engagement-section-what-i-plan'
+);
 
 console.log(headerChildDivs);
 
@@ -38,6 +42,14 @@ function resizeElements(innerWidth) {
     for (let div of headerChildDivs) {
       div.classList.add('w-50');
     }
+  }
+
+  if (innerWidth < '576') {
+    engagementSection.classList.add('flex-column');
+    engagementSectionWhatIPlan.classList.add('d-none');
+  } else {
+    engagementSection.classList.remove('flex-column');
+    engagementSectionWhatIPlan.classList.remove('d-none');
   }
 
   console.log('hiyua!');
