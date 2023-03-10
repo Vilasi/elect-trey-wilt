@@ -6,6 +6,8 @@ const engagementSection = document.querySelector('#engagement-section');
 const engagementSectionWhatIPlan = document.querySelector(
   '#engagement-section-what-i-plan'
 );
+const degreeList = document.querySelectorAll('.degree-list');
+const degreeListSmall = document.querySelectorAll('.degree-list-little-text');
 
 console.log(headerChildDivs);
 
@@ -13,8 +15,20 @@ console.log(headerChildDivs);
 function responsiveResizing(innerWidth) {
   if (innerWidth <= '992') {
     navbar.classList.add('d-none');
+
+    //* Change font-size of degree-list
+    for (let degree of degreeList) {
+      degree.classList.add('font-size-5');
+      degree.classList.remove('font-size-4');
+    }
   } else {
     navbar.classList.remove('d-none');
+
+    //* Change font-size of degree-list
+    for (let degree of degreeList) {
+      degree.classList.add('font-size-4');
+      degree.classList.remove('font-size-5');
+    }
   }
 
   if (innerWidth < '1275') {
