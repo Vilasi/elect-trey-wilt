@@ -67,7 +67,7 @@ window.addEventListener('resize', () => {
 //TODO Navbar @1275px change margin on .nav-item
 //*Events to trigger on scroll
 window.addEventListener('scroll', () => {
-  console.log(typeof window.scrollY);
+  //* Remove Navbar on scroll
   if (window.scrollY > 5 && window.innerWidth >= '992') {
     navbar.classList.add('d-none');
   } else if (window.scrollY < 5 && window.innerWidth >= '992') {
