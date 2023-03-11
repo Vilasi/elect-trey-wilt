@@ -8,6 +8,10 @@ const engagementSectionWhatIPlan = document.querySelector(
 );
 const degreeList = document.querySelectorAll('.degree-list');
 const degreeListSmall = document.querySelectorAll('.degree-list-little-text');
+const educationArticle = document.querySelector('#education-article');
+const educationArticleChildDivs = document.querySelectorAll(
+  '#education-article div'
+);
 
 console.log(headerChildDivs);
 
@@ -21,6 +25,17 @@ function responsiveResizing(innerWidth) {
       degree.classList.add('font-size-5');
       degree.classList.remove('font-size-4');
     }
+
+    //* Add flex-wrap to education article
+    educationArticle.classList.add('flex-wrap');
+
+    //* Increase education article child divs width to 100%
+    for (let div of educationArticleChildDivs) {
+      div.classList.remove('w-50');
+    }
+
+    //* Remove margin-right on first education article child div
+    educationArticleChildDivs[0].classList.remove('me-5');
   } else {
     navbar.classList.remove('d-none');
 
@@ -29,6 +44,17 @@ function responsiveResizing(innerWidth) {
       degree.classList.add('font-size-4');
       degree.classList.remove('font-size-5');
     }
+
+    //* Remove flex-wrap from education article
+    educationArticle.classList.remove('flex-wrap');
+
+    //* Decrease education article child divs width to 50%
+    for (let div of educationArticleChildDivs) {
+      div.classList.add('w-50');
+    }
+
+    //* Add margin-right on first education article child div
+    educationArticleChildDivs[0].classList.add('me-5');
   }
 
   if (innerWidth < '1275') {
