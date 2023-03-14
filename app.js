@@ -15,17 +15,15 @@ const educationArticleChildDivs = document.querySelectorAll(
 const eventCards = document.querySelectorAll('.events-cards-container .card');
 
 //* Get the widths of the events cards and set them equal to the width of the largest one
-console.log(eventCards);
+//Get all card widths
 const widthRepo = [];
 for (let card of eventCards) {
   const info = card.getBoundingClientRect();
 
-  console.log(card.style);
-
   widthRepo.push(Math.ceil(info.width));
 }
+//Set all cards equal to the width of the widest card
 const largestWidth = Math.max(...widthRepo);
-console.log(largestWidth);
 for (let card of eventCards) {
   card.style.minWidth = `${largestWidth}px`;
 }
@@ -107,6 +105,7 @@ function responsiveResizing(innerWidth) {
     engagementSectionWhatIPlan.classList.remove('d-none');
   }
 
+  //Hello future developer, enjoy your stay :)
   console.log('hiyua!');
 }
 responsiveResizing(window.innerWidth);
@@ -119,7 +118,6 @@ window.addEventListener('resize', () => {
 //* Navbar height = 56px
 //*----40px + 8px padding on top/bottom
 
-//TODO Navbar @1275px change margin on .nav-item
 //*Events to trigger on scroll
 window.addEventListener('scroll', () => {
   //* Remove Navbar on scroll
