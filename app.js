@@ -12,6 +12,7 @@ const educationArticle = document.querySelector('#education-article');
 const educationArticleChildDivs = document.querySelectorAll(
   '#education-article div'
 );
+const eventCards = document.querySelectorAll('.events-cards-container .card');
 
 console.log(headerChildDivs);
 
