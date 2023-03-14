@@ -14,7 +14,21 @@ const educationArticleChildDivs = document.querySelectorAll(
 );
 const eventCards = document.querySelectorAll('.events-cards-container .card');
 
-console.log(headerChildDivs);
+//* Get the widths of the events cards and set them equal to the width of the largest one
+console.log(eventCards);
+const widthRepo = [];
+for (let card of eventCards) {
+  const info = card.getBoundingClientRect();
+
+  console.log(card.style);
+
+  widthRepo.push(Math.ceil(info.width));
+}
+const largestWidth = Math.max(...widthRepo);
+console.log(largestWidth);
+for (let card of eventCards) {
+  card.style.minWidth = `${largestWidth}px`;
+}
 
 //* Add/Remove Navbar. Change nav-item margins
 function responsiveResizing(innerWidth) {
