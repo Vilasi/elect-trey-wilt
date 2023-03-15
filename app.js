@@ -70,6 +70,7 @@ function responsiveResizing(innerWidth) {
     educationArticleChildDivs[0].classList.add('me-5');
   }
 
+  //* Resize nav links
   if (innerWidth < '1500' && innerWidth > '1200') {
     for (let item of navItems) {
       item.classList.remove('me-5');
@@ -103,35 +104,6 @@ function responsiveResizing(innerWidth) {
       item.classList.add('me-5');
     }
   }
-
-  // if (innerWidth < '1200') {
-  //   for (let item of navItems) {
-  //     item.classList.remove('me-5');
-  //     item.classList.remove('me-4');
-  //     item.classList.add('me-3');
-  //   }
-  // } else {
-  //   for (let item of navItems) {
-  //     item.classList.remove('me-5');
-  //     item.classList.remove('me-3');
-  //     item.classList.add('me-4');
-  //   }
-  // }
-
-  // if (innerWidth < '1150') {
-  //   for (let item of navItems) {
-  //     item.classList.remove('me-5');
-  //     item.classList.remove('me-4');
-  //     item.classList.remove('me-3');
-  //     item.classList.add('me-2');
-  //   }
-  // } else {
-  //   for (let item of navItems) {
-  //     item.classList.remove('me-5');
-  //     item.classList.remove('me-3');
-  //     item.classList.add('me-4');
-  //   }
-  // }
 
   if (innerWidth < '800') {
     header.classList.add('flex-column');
