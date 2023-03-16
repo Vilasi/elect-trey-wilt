@@ -71,39 +71,39 @@ function responsiveResizing(innerWidth) {
   }
 
   //* Resize nav links
-  if (innerWidth < '1500' && innerWidth > '1200') {
-    for (let item of navItems) {
-      item.classList.remove('me-5');
-      item.classList.remove('me-3');
-      item.classList.remove('me-2');
-      item.classList.remove('me-1');
-      item.classList.add('me-4');
-    }
-  } else if (innerWidth < '1200' && innerWidth > '1150') {
-    for (let item of navItems) {
-      item.classList.remove('me-5');
-      item.classList.remove('me-4');
-      item.classList.remove('me-2');
-      item.classList.remove('me-1');
-      item.classList.add('me-3');
-    }
-  } else if (innerWidth < '1150') {
-    for (let item of navItems) {
-      item.classList.remove('me-5');
-      item.classList.remove('me-4');
-      item.classList.remove('me-3');
-      item.classList.remove('me-1');
-      item.classList.add('me-2');
-    }
-  } else {
-    for (let item of navItems) {
-      item.classList.remove('me-4');
-      item.classList.remove('me-3');
-      item.classList.remove('me-2');
-      item.classList.remove('me-1');
-      item.classList.add('me-5');
-    }
-  }
+  // if (innerWidth < '1500' && innerWidth > '1200') {
+  //   for (let item of navItems) {
+  //     item.classList.remove('me-5');
+  //     item.classList.remove('me-3');
+  //     item.classList.remove('me-2');
+  //     item.classList.remove('me-1');
+  //     item.classList.add('me-4');
+  //   }
+  // } else if (innerWidth < '1200' && innerWidth > '1150') {
+  //   for (let item of navItems) {
+  //     item.classList.remove('me-5');
+  //     item.classList.remove('me-4');
+  //     item.classList.remove('me-2');
+  //     item.classList.remove('me-1');
+  //     item.classList.add('me-3');
+  //   }
+  // } else if (innerWidth < '1150') {
+  //   for (let item of navItems) {
+  //     item.classList.remove('me-5');
+  //     item.classList.remove('me-4');
+  //     item.classList.remove('me-3');
+  //     item.classList.remove('me-1');
+  //     item.classList.add('me-2');
+  //   }
+  // } else {
+  //   for (let item of navItems) {
+  //     item.classList.remove('me-4');
+  //     item.classList.remove('me-3');
+  //     item.classList.remove('me-2');
+  //     item.classList.remove('me-1');
+  //     item.classList.add('me-5');
+  //   }
+  // }
 
   if (innerWidth < '800') {
     header.classList.add('flex-column');
